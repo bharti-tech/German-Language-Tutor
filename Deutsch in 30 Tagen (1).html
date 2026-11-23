@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deutsch in 30 Tagen</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600;700&display=swap">
+<style>
+:root{--bg:#f1f3f6;--sf:#fff;--ink:#1b1f2a;--mu:#5b6475;--ln:#d9dde5;--l1:#1f6f8b;--l2:#c8283c;--l3:#a87400;--ok:#1d8a4e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151c;--sf:#1b2029;--ink:#eef1f6;--mu:#9aa5b8;--ln:#2d3544;--l1:#5bb6d4;--l2:#ff6b7d;--l3:#f2b92e;--ok:#4cc27f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12151c;--sf:#1b2029;--ink:#eef1f6;--mu:#9aa5b8;--ln:#2d3544;--l1:#5bb6d4;--l2:#ff6b7d;--l3:#f2b92e;--ok:#4cc27f;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;margin:0;line-height:1.1}
+header{background:var(--ink);color:var(--bg);padding:28px 20px 22px}
+.w{max-width:960px;margin:0 auto}
+header h1{font-size:clamp(34px,7vw,56px)}
+header p{margin:6px 0 16px;color:var(--ln);max-width:60ch}
+.bar{height:10px;background:rgba(127,127,127,.35);border-radius:5px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:#ffcc00;transition:width .3s}
+.st{margin-top:8px;font-size:14px}
+main{padding:20px}
+.lv{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.lv button{flex:1;min-width:140px;text-align:left;padding:10px 12px;border:2px solid var(--ln);background:var(--sf);color:var(--ink);border-radius:6px;font:inherit;cursor:pointer}
+.lv button b{font:700 20px 'Barlow Condensed',sans-serif;display:block}
+.lv button small{color:var(--mu)}
+.lv button.on{border-color:var(--c)}
+.grid{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin-bottom:20px}
+@media(max-width:560px){.grid{grid-template-columns:repeat(6,1fr)}}
+.grid button{aspect-ratio:1;border:2px solid var(--ln);background:var(--sf);color:var(--ink);border-radius:6px;font:700 18px 'Barlow Condensed',sans-serif;cursor:pointer;position:relative}
+.grid button.done{background:var(--ok);border-color:var(--ok);color:#fff}
+.grid button.cur{outline:3px solid var(--c);outline-offset:1px}
+.grid button:focus-visible,.lv button:focus-visible,.btn:focus-visible,.v:focus-visible{outline:3px solid #ffcc00;outline-offset:2px}
+.card{background:var(--sf);border:1px solid var(--ln);border-left:8px solid var(--c);border-radius:6px;padding:20px}
+.card h2{font-size:34px}
+.tag{display:inline-block;color:var(--c);font-weight:600;margin-bottom:4px}
+.sec{margin-top:18px}
+.sec h3{font-size:22px;margin-bottom:8px}
+.vs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.v{border:1px solid var(--ln);background:var(--bg);color:var(--ink);border-radius:6px;padding:10px;text-align:left;font:inherit;cursor:pointer;min-height:64px}
+.v b{font-size:18px;display:block}
+.v span{color:var(--mu)}
+.v.sh{border-color:var(--c)}
+.ph{font-size:20px;font-weight:600}
+.ph em{display:block;font-style:normal;font-weight:400;color:var(--mu);font-size:16px}
+.sc{color:var(--mu);margin:0 0 8px}.dl{display:grid;gap:6px}.ln{display:block;text-align:left;border:1px solid var(--ln);background:var(--bg);color:var(--ink);border-radius:6px;padding:8px 12px;font:inherit;cursor:pointer;width:100%}.ln:nth-child(even){margin-left:clamp(0px,6vw,48px);border-color:var(--c)}.ln small{display:block;color:var(--mu)}.ln b{font-weight:600;color:var(--c)}.dl.hide em{display:none}.ln em{display:block;font-style:normal;color:var(--mu);font-size:15px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-block;border:2px solid var(--ink);background:transparent;color:var(--ink);padding:8px 14px;border-radius:6px;font:600 15px Barlow,sans-serif;cursor:pointer;text-decoration:none}
+.btn.yt{background:#d00000;border-color:#d00000;color:#fff}
+.btn.pri{background:var(--ok);border-color:var(--ok);color:#fff}
+.nav{display:flex;justify-content:space-between;gap:8px;margin-top:22px;flex-wrap:wrap}
+.lib{margin-top:28px}
+.lib h2{font-size:30px;margin-bottom:8px}
+.lib ul{margin:0;padding-left:20px}
+.lib li{margin:4px 0}
+a{color:var(--l1)}
+footer{padding:20px;color:var(--mu);font-size:14px;text-align:center}
+</style></head><body>
+<header><div class="w">
+<h1>Deutsch in 30 Tagen</h1>
+<p>From business German to everyday German: one short lesson a day, about 45 minutes. Foundations, then the office, then real life.</p>
+<div class="bar"><i id="pb"></i></div><div class="st" id="st"></div>
+</div></header>
+<main><div class="w">
+<div class="lv" id="lv"></div>
+<div class="grid" id="gr"></div>
+<div class="card" id="day"></div>
+<div class="lib"><h2>Video library</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Nicos+Weg+A1+Deutsche+Welle">Nicos Weg (Deutsche Welle)</a>: a full A1 story course with exercises.</li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Easy+German+street+interviews">Easy German</a>: street interviews with subtitles for listening.</li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Learn+German+with+Anja">Learn German with Anja</a>: clear grammar and pronunciation.</li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Business+German+for+beginners">Business German for beginners</a>: office and email language.</li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Slow+German+podcast">Slow German</a>: slowly spoken short stories.</li>
+</ul></div>
+<div class="row" style="margin-top:20px"><button class="btn" id="rs">Reset progress</button></div>
+</div></main>
+<footer>Video buttons open YouTube searches for each day's topic, so you always get current videos.</footer>
+<script>
+const L=[{n:"Level 1: Foundations",s:"Days 1-10 · everyday basics",c:"var(--l1)"},{n:"Level 2: Business German",s:"Days 11-20 · office life",c:"var(--l2)"},{n:"Level 3: Everyday German",s:"Days 21-30 · real life",c:"var(--l3)"}];
+// title | vocab (de=en;...) | phrase=translation | grammar | task | video query
+const D=[
+["Greetings & introductions","Hallo=hello;Guten Tag=good day;ich heiße=my name is;Freut mich=nice to meet you","Guten Tag, ich heiße Anna.=Good day, my name is Anna.","The verb sits in 2nd position: Ich komme aus Indien.","Introduce yourself aloud 3 times: name, country, city.","German greetings introductions beginner"],
+["Alphabet & pronunciation","die Straße=street;schön=beautiful;über=about;die Zeit=time","Ich spreche ein bisschen Deutsch.=I speak a little German.","w sounds like v, v like f, z like ts, ä ö ü are new vowels, ch is soft after e/i.","Read the 5 words aloud. Record yourself and compare with a video.","German pronunciation alphabet umlaut beginners"],
+["Numbers & time","eins, zwei, drei=one, two, three;die Uhr=clock;die Zahl=number;halb=half","Wie spät ist es? Es ist halb drei.=What time is it? It's half past two (literally half to three).","Halb means half before the next hour: halb drei = 2:30.","Say 10 phone numbers aloud, digit by digit.","German numbers 1 to 100 and telling time"],
+["sein & haben","ich bin=I am;ich habe=I have;das Alter=age;der Name=name","Ich bin 30 Jahre alt und habe einen Bruder.=I am 30 years old and have a brother.","sein: bin, bist, ist, sind, seid, sind. haben: habe, hast, hat, haben, habt, haben.","Write 5 sentences about yourself with sein and haben.","German sein haben conjugation beginner"],
+["Articles: der, die, das","der Tisch=table;die Lampe=lamp;das Buch=book;ein / eine=a / an","Das ist ein Tisch und das ist eine Lampe.=That is a table and that is a lamp.","Always learn a noun with its article. Nouns are capitalised.","Label 10 objects around you with der/die/das.","German articles der die das beginners"],
+["Regular verbs","lernen=to learn;arbeiten=to work;wohnen=to live;machen=to do","Ich lerne Deutsch und arbeite in Berlin.=I learn German and work in Berlin.","Endings: -e, -st, -t, -en, -t, -en (ich lerne, du lernst, er lernt).","Conjugate 4 verbs in all persons, then say 6 sentences.","German present tense regular verbs"],
+["Asking questions","wer=who;was=what;wo=where;warum=why","Wo wohnst du und was machst du?=Where do you live and what do you do?","W-questions put the verb second. Yes/no questions start with the verb.","Ask yourself 8 questions and answer them aloud.","German question words W-Fragen beginners"],
+["Negation: nicht & kein","nicht=not;kein / keine=no / not any;die Zeit=time;das Geld=money","Ich habe keine Zeit und kein Geld.=I have no time and no money.","kein negates nouns, nicht negates verbs and adjectives.","Turn 6 positive sentences into negative ones.","German nicht vs kein explained"],
+["Days, months & dates","der Montag=Monday;der Monat=month;heute=today;morgen=tomorrow","Heute ist Montag, morgen habe ich Zeit.=Today is Monday, tomorrow I have time.","Days take der. Use am for days: am Montag. Use im for months: im Mai.","Say your weekly schedule in German.","German days months dates beginners"],
+["Café & ordering","der Kaffee=coffee;das Wasser=water;die Rechnung=bill;bitte=please","Ich möchte einen Kaffee, bitte.=I would like a coffee, please.","möchte + accusative: ein becomes einen for masculine nouns.","Role-play ordering 3 items and asking for the bill.","German ordering coffee cafe dialogue beginners"],
+["The office","das Büro=office;der Kollege=colleague;die Besprechung=meeting;der Chef=boss","Ich arbeite im Büro mit meinen Kollegen.=I work in the office with my colleagues.","Sie (formal you) is used with business contacts, du with friends and close colleagues.","Describe your workplace in 5 sentences using Sie and ich.","Business German office vocabulary beginners"],
+["Business email","die E-Mail=email;der Anhang=attachment;Sehr geehrte Damen und Herren=Dear Sir or Madam;Mit freundlichen Grüßen=Kind regards","Anbei finden Sie den Bericht.=Attached you will find the report.","Formal emails: greeting, reason, request, thanks, closing.","Write a 5-line email asking for a meeting.","Business German email writing Sehr geehrte"],
+["Phone calls","anrufen=to call;verbinden=to connect;die Nachricht=message;zurückrufen=to call back","Ich rufe wegen des Termins an.=I'm calling about the appointment.","Separable verbs: ich rufe an, ich rufe zurück.","Practise the phone script: greeting, name, reason, closing.","Business German telephone phrases"],
+["Meetings & agenda","der Termin=appointment;die Tagesordnung=agenda;das Protokoll=minutes;vorschlagen=to suggest","Ich schlage vor, dass wir um zehn beginnen.=I suggest we start at ten.","dass sends the verb to the end of the clause.","Plan a 3-point agenda and say it aloud.","German business meeting phrases"],
+["Modal verbs at work","können=can;müssen=must;sollen=should;dürfen=may","Ich muss das Angebot heute schicken.=I must send the offer today.","Modal verb in 2nd place, infinitive at the end.","Write 6 work sentences with können, müssen, sollen.","German modal verbs können müssen sollen"],
+["Scheduling appointments","der Dienstag=Tuesday;vereinbaren=to arrange;verschieben=to postpone;passen=to suit","Passt Ihnen Dienstag um 14 Uhr?=Does Tuesday at 2 pm suit you?","Use am + day, um + time, and the dative with passen.","Role-play booking, moving and cancelling a meeting.","German appointment scheduling business phrases"],
+["Company & presentations","das Unternehmen=company;die Abteilung=department;der Umsatz=revenue;das Ziel=goal","Unser Unternehmen hat drei Abteilungen.=Our company has three departments.","Link ideas with und, aber, denn, weil, deshalb.","Give a 1-minute company introduction.","German business presentation introduction"],
+["Offers & negotiation","das Angebot=offer;der Preis=price;der Rabatt=discount;die Lieferung=delivery","Können Sie uns einen Rabatt anbieten?=Can you offer us a discount?","Polite requests: Könnten Sie ...? Würden Sie ...?","Role-play a price negotiation.","German negotiation business phrases"],
+["Perfect tense (Perfekt)","geschickt=sent;gemacht=done;gearbeitet=worked;gesprochen=spoken","Ich habe die E-Mail gestern geschickt.=I sent the email yesterday.","haben + past participle at the end. Regular: ge-...-t.","Report your last working day in 6 sentences.","German Perfekt tense explained beginners"],
+["Networking & small talk","die Visitenkarte=business card;die Reise=trip;der Kunde=client;gern=gladly","Wie war Ihre Reise? Freut mich, Sie kennenzulernen.=How was your trip? Pleased to meet you.","gern + verb says what you like: Ich arbeite gern im Team.","Practise 5 small-talk exchanges with a partner or in the mirror.","German small talk business networking"],
+["Shopping","der Laden=shop;billig=cheap;teuer=expensive;die Tüte=bag","Was kostet das? Das ist mir zu teuer.=How much is that? That's too expensive for me.","Accusative: ich brauche einen Pullover / eine Jacke / ein Hemd.","Role-play buying 3 items.","German shopping dialogue beginners"],
+["Directions","links=left;rechts=right;geradeaus=straight;der Bahnhof=station","Entschuldigung, wo ist der Bahnhof?=Excuse me, where is the station?","Imperatives: Gehen Sie geradeaus, biegen Sie links ab.","Give directions from your home to a shop.","German asking for directions"],
+["Transport & travel","der Zug=train;die Fahrkarte=ticket;die Verspätung=delay;das Gleis=platform","Einmal nach München, bitte.=One ticket to Munich, please.","Dative with mit and zu: mit dem Zug, zum Bahnhof.","Role-play buying a train ticket.","German train station travel phrases"],
+["Restaurant","die Speisekarte=menu;die Vorspeise=starter;lecker=tasty;zahlen=to pay","Zahlen, bitte! Zusammen oder getrennt?=The bill, please! Together or separate?","Polite requests: Ich hätte gern ...","Order a 3-course meal aloud.","German restaurant ordering dialogue"],
+["Health & doctor","der Arzt=doctor;der Kopf=head;die Schmerzen=pain;die Apotheke=pharmacy","Ich habe Kopfschmerzen und Fieber.=I have a headache and a fever.","seit + dative: Ich bin seit zwei Tagen krank.","Describe 3 symptoms to a doctor.","German at the doctor vocabulary"],
+["Home & daily routine","aufstehen=to get up;frühstücken=to have breakfast;die Wohnung=flat;einkaufen=to shop","Ich stehe um sieben Uhr auf.=I get up at seven.","Separable verbs: prefix goes to the end.","Narrate your day from morning to night.","German daily routine separable verbs"],
+["Weather & hobbies","das Wetter=weather;es regnet=it's raining;die Freizeit=free time;spazieren=to walk","Heute regnet es, deshalb bleibe ich zu Hause.=It rains today, so I'm staying home.","deshalb sends the verb straight after it: deshalb bleibe ich.","Talk about weather and hobbies for 1 minute.","German weather hobbies vocabulary beginners"],
+["Friends & social life","die Freunde=friends;einladen=to invite;die Party=party;weil=because","Wollen wir morgen ins Kino gehen?=Shall we go to the cinema tomorrow?","weil clauses end with the verb: ..., weil ich müde bin.","Invite a friend and give a reason.","German making plans with friends"],
+["Problems & getting help","Können Sie das wiederholen?=Can you repeat that?;langsamer=slower;ich verstehe nicht=I don't understand;helfen=to help","Könnten Sie bitte langsamer sprechen?=Could you please speak more slowly?","Use these phrases anywhere to stay in the conversation.","Memorise 5 rescue phrases and use them in a role-play.","German useful phrases when you don't understand"],
+["Final challenge","das Gespräch=conversation;die Prüfung=exam;der Fortschritt=progress;weiter=onwards","Ich habe in 30 Tagen viel gelernt.=I have learned a lot in 30 days.","Review: verb second, modals, Perfekt, weil, separable verbs.","Record a 2-minute talk: introduce yourself, your work, your day, and plans. Then keep going!","German 2 minute speaking practice A1 A2"]
+];
+const C=["At a conference#Anna|Guten Tag, ich heiße Anna. Und Sie?|Good day, I'm Anna. And you?~Ravi|Hallo, ich bin Ravi. Freut mich!|Hello, I'm Ravi. Nice to meet you!~Anna|Woher kommen Sie?|Where are you from?~Ravi|Ich komme aus Indien.|I come from India.",
+"Hotel check-in#Rezeption|Wie ist Ihr Name, bitte?|What is your name, please?~Ravi|Ravi Sharma. Das schreibt man S-H-A-R-M-A.|Ravi Sharma. It is spelled S-H-A-R-M-A.~Rezeption|Danke schön, Herr Sharma.|Thank you very much, Mr Sharma.~Ravi|Bitte schön.|You're welcome.",
+"At the station#Ravi|Entschuldigung, wie spät ist es?|Excuse me, what time is it?~Passantin|Es ist halb drei.|It's half past two.~Ravi|Wann fährt der Zug?|When does the train leave?~Passantin|Um drei Uhr fünfzehn.|At 3:15.",
+"Meeting a new colleague#Lisa|Wie alt bist du?|How old are you?~Ravi|Ich bin dreißig. Und du?|I'm thirty. And you?~Lisa|Ich bin achtundzwanzig. Hast du Geschwister?|I'm twenty-eight. Do you have siblings?~Ravi|Ja, ich habe einen Bruder.|Yes, I have a brother.",
+"Flat-share chat#Mia|Wo ist der Schlüssel?|Where is the key?~Tom|Der Schlüssel liegt auf dem Tisch.|The key is on the table.~Mia|Und wo ist das Buch?|And where is the book?~Tom|Das Buch ist neben der Lampe.|The book is next to the lamp.",
+"Language exchange#Ravi|Was machst du beruflich?|What do you do for work?~Jonas|Ich arbeite bei einer Bank. Und du?|I work at a bank. And you?~Ravi|Ich lerne Deutsch und wohne in Pune.|I'm learning German and live in Pune.~Jonas|Super! Du sprichst schon gut.|Great! You already speak well.",
+"Information desk#Ravi|Wo ist der Schalter?|Where is the counter?~Mitarbeiter|Dort links. Was suchen Sie?|Over there on the left. What are you looking for?~Ravi|Wann fährt der nächste Zug nach Köln?|When does the next train to Cologne leave?~Mitarbeiter|In zehn Minuten.|In ten minutes.",
+"Declining an invitation#Eva|Hast du heute Abend Zeit?|Do you have time tonight?~Ravi|Leider nicht. Ich habe keine Zeit.|Unfortunately not. I have no time.~Eva|Schade! Und morgen?|Pity! And tomorrow?~Ravi|Morgen passt gut.|Tomorrow works well.",
+"Planning the week#Ravi|Was machst du am Montag?|What are you doing on Monday?~Eva|Am Montag arbeite ich. Am Dienstag habe ich frei.|On Monday I work. On Tuesday I'm off.~Ravi|Treffen wir uns am Dienstag?|Shall we meet on Tuesday?~Eva|Ja, gern!|Yes, gladly!",
+"In a café#Kellner|Guten Tag, was möchten Sie?|Good day, what would you like?~Ravi|Ich möchte einen Kaffee und ein Wasser, bitte.|I'd like a coffee and a water, please.~Kellner|Sonst noch etwas?|Anything else?~Ravi|Nein, danke. Die Rechnung, bitte.|No, thanks. The bill, please.",
+"First day at the office#Chefin|Herzlich willkommen im Büro!|Welcome to the office!~Ravi|Danke. Ich freue mich, Sie kennenzulernen.|Thank you. I'm pleased to meet you.~Chefin|Hier ist Ihr Kollege, Herr Braun.|Here is your colleague, Mr Braun.~Ravi|Guten Morgen, Herr Braun.|Good morning, Mr Braun.",
+"The missing attachment#Ravi|Haben Sie meine E-Mail bekommen?|Did you receive my email?~Frau Klein|Ja, aber der Anhang fehlt.|Yes, but the attachment is missing.~Ravi|Entschuldigung, ich schicke ihn sofort.|Sorry, I'll send it right away.~Frau Klein|Vielen Dank.|Many thanks.",
+"Calling a client#Ravi|Guten Tag, hier spricht Ravi Sharma. Ich rufe wegen des Termins an.|Good day, this is Ravi Sharma. I'm calling about the appointment.~Empfang|Einen Moment, ich verbinde Sie.|One moment, I'll connect you.~Herr Weber|Weber, guten Tag.|Weber speaking.~Ravi|Guten Tag, Herr Weber. Haben Sie kurz Zeit?|Good day, Mr Weber. Do you have a moment?",
+"Starting a meeting#Leiterin|Wir beginnen. Das ist die Tagesordnung.|We're starting. This is the agenda.~Ravi|Ich schlage vor, dass wir zuerst über das Budget sprechen.|I suggest we talk about the budget first.~Leiterin|Gute Idee. Wer schreibt das Protokoll?|Good idea. Who writes the minutes?~Ravi|Das mache ich.|I'll do that.",
+"A tight deadline#Chef|Können Sie den Bericht bis Freitag schicken?|Can you send the report by Friday?~Ravi|Ja, ich muss nur noch die Zahlen prüfen.|Yes, I just have to check the figures.~Chef|Sie sollten auch Frau Klein informieren.|You should also inform Ms Klein.~Ravi|Natürlich, das mache ich heute.|Of course, I'll do that today.",
+"Rescheduling a meeting#Ravi|Passt Ihnen Dienstag um 14 Uhr?|Does Tuesday at 2 pm suit you?~Kundin|Leider nicht. Können wir den Termin verschieben?|Unfortunately not. Can we postpone it?~Ravi|Gern. Wie wäre es am Mittwoch um zehn?|Gladly. How about Wednesday at ten?~Kundin|Mittwoch passt perfekt.|Wednesday suits perfectly.",
+"Company presentation#Ravi|Guten Morgen, meine Damen und Herren. Ich stelle unser Unternehmen vor.|Good morning, ladies and gentlemen. I'll introduce our company.~Ravi|Wir haben drei Abteilungen und 200 Mitarbeiter.|We have three departments and 200 employees.~Gast|Wie hoch ist Ihr Umsatz?|What is your revenue?~Ravi|Unser Umsatz wächst jedes Jahr.|Our revenue grows every year.",
+"Price negotiation#Kunde|Ihr Preis ist zu hoch.|Your price is too high.~Ravi|Wir können Ihnen zehn Prozent Rabatt anbieten.|We can offer you a ten percent discount.~Kunde|Und die Lieferung?|And the delivery?~Ravi|Die Lieferung ist kostenlos.|Delivery is free.",
+"Weekly status report#Chef|Was haben Sie diese Woche gemacht?|What did you do this week?~Ravi|Ich habe den Bericht geschrieben und die E-Mail geschickt.|I wrote the report and sent the email.~Chef|Haben Sie mit dem Kunden gesprochen?|Did you speak with the client?~Ravi|Ja, wir haben gestern telefoniert.|Yes, we spoke on the phone yesterday.",
+"Networking event#Ravi|Wie war Ihre Reise?|How was your trip?~Herr Fischer|Gut, danke. Der Zug hatte keine Verspätung.|Good, thanks. The train had no delay.~Ravi|Hier ist meine Visitenkarte.|Here is my business card.~Herr Fischer|Danke. Wir bleiben in Kontakt.|Thanks. We'll stay in touch.",
+"In a clothes shop#Verkäuferin|Kann ich Ihnen helfen?|Can I help you?~Ravi|Ja, ich suche eine Jacke.|Yes, I'm looking for a jacket.~Verkäuferin|Diese hier kostet neunzig Euro.|This one costs ninety euros.~Ravi|Das ist mir zu teuer. Haben Sie etwas Billigeres?|That's too expensive for me. Do you have something cheaper?",
+"Asking for directions#Ravi|Entschuldigung, wo ist der Bahnhof?|Excuse me, where is the station?~Passant|Gehen Sie geradeaus und dann links.|Go straight and then left.~Ravi|Ist es weit?|Is it far?~Passant|Nein, nur fünf Minuten zu Fuß.|No, only five minutes on foot.",
+"Buying a train ticket#Ravi|Einmal nach München, bitte.|One ticket to Munich, please.~Schalter|Einfach oder hin und zurück?|One way or return?~Ravi|Hin und zurück. Von welchem Gleis fährt der Zug?|Return. From which platform does the train leave?~Schalter|Von Gleis sieben.|From platform seven.",
+"Dinner at a restaurant#Kellner|Haben Sie schon gewählt?|Have you chosen yet?~Ravi|Ich hätte gern die Suppe und danach das Schnitzel.|I'd like the soup and then the schnitzel.~Kellner|Und zu trinken?|And to drink?~Ravi|Ein Wasser, bitte. Wir zahlen später zusammen.|A water, please. We'll pay together later.",
+"At the doctor#Ärztin|Was fehlt Ihnen?|What's wrong?~Ravi|Ich habe seit zwei Tagen Kopfschmerzen und Fieber.|I've had a headache and fever for two days.~Ärztin|Sie müssen viel trinken und im Bett bleiben.|You must drink a lot and stay in bed.~Ravi|Brauche ich ein Medikament aus der Apotheke?|Do I need medicine from the pharmacy?",
+"Flatmates and daily routine#Mia|Wann stehst du morgens auf?|When do you get up in the morning?~Ravi|Ich stehe um sieben Uhr auf und frühstücke.|I get up at seven and have breakfast.~Mia|Und wann kaufst du ein?|And when do you shop?~Ravi|Ich kaufe abends nach der Arbeit ein.|I shop in the evening after work.",
+"Weather and hobbies#Eva|Wie ist das Wetter heute?|How is the weather today?~Ravi|Es regnet, deshalb bleibe ich zu Hause.|It's raining, so I'm staying home.~Eva|Was machst du in deiner Freizeit?|What do you do in your free time?~Ravi|Ich lese gern und koche gern.|I like reading and cooking.",
+"Making plans with friends#Ravi|Wollen wir morgen ins Kino gehen?|Shall we go to the cinema tomorrow?~Jonas|Ich kann nicht, weil ich arbeiten muss.|I can't because I have to work.~Ravi|Schade. Und am Samstag?|Pity. And on Saturday?~Jonas|Am Samstag gern! Ich lade dich ein.|Saturday gladly! I'll treat you.",
+"Asking for help#Passantin|Die Haltestelle ist gleich hinter der Kreuzung.|The stop is right behind the intersection.~Ravi|Entschuldigung, ich verstehe nicht. Können Sie das wiederholen?|Sorry, I don't understand. Can you repeat that?~Passantin|Natürlich. Hinter der Kreuzung.|Of course. Behind the intersection.~Ravi|Könnten Sie bitte langsamer sprechen? Danke!|Could you please speak more slowly? Thanks!",
+"Final challenge: job interview#Interviewerin|Erzählen Sie etwas über sich.|Tell us something about yourself.~Ravi|Ich heiße Ravi, ich arbeite im Büro und lerne seit dreißig Tagen Deutsch.|I'm Ravi, I work in an office and have been learning German for thirty days.~Interviewerin|Was machen Sie in Ihrer Freizeit?|What do you do in your free time?~Ravi|Ich lese gern, und morgen fahre ich nach Berlin, weil ich dort einen Termin habe.|I like reading, and tomorrow I'm going to Berlin because I have an appointment there."];
+let hideT=false;
+function dlg(i){const[t,b]=C[i].split("#");return `<div class="sec"><h3>Conversation</h3><p class="sc">Scenario: ${t}. Tap a line to hear it.</p><div class="dl ${hideT?'hide':''}" id="dl">${b.split("~").map(x=>{const[s,g,e]=x.split("|");return `<button class="ln" data-t="${g}"><b>${s}</b> ${g}<em>${e}</em></button>`}).join("")}</div><div class="row"><button class="btn" id="tg">${hideT?'Show':'Hide'} English</button><button class="btn" id="pa">Play all</button></div></div>`}
+let done={},cur=0,lvl=-1;
+try{done=JSON.parse(localStorage.getItem("de30")||"{}")}catch(e){}
+try{cur=+localStorage.getItem("de30c")||0}catch(e){}
+const $=id=>document.getElementById(id);
+const save=()=>{try{localStorage.setItem("de30",JSON.stringify(done));localStorage.setItem("de30c",cur)}catch(e){}};
+const li=i=>Math.floor(i/10);
+function speak(t){try{const u=new SpeechSynthesisUtterance(t);u.lang="de-DE";u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
+const yt=q=>"https://www.youtube.com/results?search_query="+encodeURIComponent(q);
+function render(){
+ const n=Object.keys(done).length;
+ $("pb").style.width=n/30*100+"%";
+ $("st").textContent=n+" of 30 days complete"+(n==30?". Congratulations, Glückwunsch!":"");
+ $("lv").innerHTML=L.map((l,i)=>`<button class="${lvl==i?'on':''}" style="--c:${l.c}" data-l="${i}"><b>${l.n}</b><small>${l.s}</small></button>`).join("");
+ $("gr").innerHTML=D.map((d,i)=>`<button style="--c:${L[li(i)].c};${lvl>=0&&li(i)!=lvl?'opacity:.35':''}" class="${done[i]?'done':''} ${i==cur?'cur':''}" data-d="${i}" aria-label="Day ${i+1}: ${d[0]}">${done[i]?'✓':i+1}</button>`).join("");
+ const d=D[cur],l=L[li(cur)],ph=d[2].split("=");
+ $("day").style.setProperty("--c",l.c);
+ $("day").innerHTML=`<span class="tag">Day ${cur+1} of 30 · ${l.n}</span><h2>${d[0]}</h2>
+ <div class="sec"><h3>Vocabulary</h3><div class="vs">${d[1].split(";").map(v=>{const[a,b]=v.split("=");return `<button class="v" data-a="${a}"><b>${a}</b><span hidden>${b}</span><span class="h">Tap to reveal</span></button>`}).join("")}</div></div>
+ <div class="sec"><h3>Key phrase</h3><div class="ph">${ph[0]}<em>${ph[1]}</em></div><div class="row"><button class="btn" id="sp">Listen</button></div></div>
+ ${dlg(cur)}
+ <div class="sec"><h3>Grammar tip</h3><p>${d[3]}</p></div>
+ <div class="sec"><h3>Today's task</h3><p>${d[4]}</p></div>
+ <div class="sec"><h3>Videos</h3><div class="row">
+ <a class="btn yt" target="_blank" rel="noopener" href="${yt(d[5])}">Lesson videos</a>
+ <a class="btn yt" target="_blank" rel="noopener" href="${yt('Easy German '+d[0])}">Listening practice</a>
+ <a class="btn yt" target="_blank" rel="noopener" href="${yt('Learn German with Anja '+d[0])}">Grammar help</a></div></div>
+ <div class="row" style="margin-top:20px"><button class="btn pri" id="dn">${done[cur]?'Completed: undo':'Mark day complete'}</button></div>
+ <div class="nav"><button class="btn" id="pv" ${cur==0?'disabled':''}>Previous day</button><button class="btn" id="nx" ${cur==29?'disabled':''}>Next day</button></div>`;
+}
+document.addEventListener("click",e=>{
+ const t=e.target.closest("button");if(!t)return;
+ if(t.dataset.l!==undefined){lvl=lvl==+t.dataset.l?-1:+t.dataset.l;if(lvl>=0)cur=lvl*10;save();render();return}
+ if(t.dataset.d!==undefined){cur=+t.dataset.d;save();render();scrollTo({top:$("day").offsetTop-10,behavior:"smooth"});return}
+ if(t.classList.contains("v")){const s=t.querySelector("span:not(.h)"),h=t.querySelector(".h");s.hidden=!s.hidden;h.hidden=!s.hidden;t.classList.toggle("sh",!s.hidden);speak(t.dataset.a);return}
+ if(t.classList.contains("ln")){speak(t.dataset.t);return}
+ if(t.id=="tg"){hideT=!hideT;$("dl").classList.toggle("hide",hideT);t.textContent=(hideT?"Show":"Hide")+" English";return}
+ if(t.id=="pa"){try{speechSynthesis.cancel()}catch(x){}document.querySelectorAll("#dl .ln").forEach(b=>{try{const u=new SpeechSynthesisUtterance(b.dataset.t);u.lang="de-DE";u.rate=.85;speechSynthesis.speak(u)}catch(x){}});return}
+ if(t.id=="sp")speak(D[cur][2].split("=")[0]);
+ if(t.id=="dn"){done[cur]?delete done[cur]:done[cur]=1;save();render()}
+ if(t.id=="pv"&&cur>0){cur--;save();render()}
+ if(t.id=="nx"&&cur<29){cur++;save();render()}
+ if(t.id=="rs"&&confirm("Reset all progress?")){done={};cur=0;lvl=-1;save();render()}
+});
+render();
+</script></body></html>
